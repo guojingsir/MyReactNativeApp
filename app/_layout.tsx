@@ -53,6 +53,12 @@ function RootLayoutNav() {
       <Stack>
         <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
         <Stack.Screen name="modal" options={{ presentation: 'modal' }} />
+        <Stack.Screen
+          name="page"
+          options={{
+            headerShown: false, // Hides the parent navigation for all routes under "page"
+          }}
+        />
       </Stack>
     </ThemeProvider>
   );
